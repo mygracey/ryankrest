@@ -1400,7 +1400,7 @@
     
     .footer .icon{
         position:relative;
-        top:-100px;
+        top:-30px;
         left:-50px;
     }
 
@@ -1408,7 +1408,7 @@
         font-size:14px;
         position:relative;
         left:5px;
-        top:-50px;
+        top:-150px;
     }
 
 }

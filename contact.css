@@ -735,7 +735,7 @@ form .btn-submit{
         font-size:14px;
         position:relative;
         left:5px;
-        top:-200px;
+        top:-100px;
     }
 
 }
@@ -984,7 +984,7 @@ form .btn-submit{
 
    .footer{
     max-width:375px;
-    height:auto;
+    height:1000px;
    }
    
     .footer-box{
@@ -1001,12 +1001,13 @@ form .btn-submit{
         width:200px;
         height:200px;
         left:-20px;
+        top:-30px;
         /* background-color: black; */
     }
    .footer .footer-box .card-one .logo-area-footer{
         position:relative;
-        top:40px;
-        left:-60px;
+        top:-20px;
+        left:-30px;
     }
 
     .footer-box .card-two{
@@ -1035,7 +1036,7 @@ form .btn-submit{
         font-size:14px;
         position:relative;
         left:5px;
-        top:-50px;
+        top:-100px;
     }
 
 }

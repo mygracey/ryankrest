@@ -967,7 +967,70 @@
 
     .banner h1{
         position:relative;
-        left:40px;
+        left:200px;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-mobile{
+        display: block;
+        width:400px;
+        height:70px;
+        background:var(--primary-color);
+        position:relative;
+        position: fixed;
+        top:0;
+        z-index: 900;
+    }
+
+    .fa-bars{
+        display:block;
+        color:white;
+        position:relative;
+        left:300px;
+        top:-50px;
+        cursor:pointer;
+    }
+    .close{
+        color:white;
+        position:relative;
+        top:-50px;
+        left:300px;
+        cursor: pointer;
+        display: none;
+        cursor: pointer;
+    }
+   
+
+    .sub-menu{
+        position:fixed;
+        left:200px;
+        top:70px;
+        width:200px;
+        height:300px;
+        list-style: none;
+        background:rgba(132, 80, 3,0.8); 
+        z-index:900;  
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display:none;
+        animation:slideinfromright 1s ease-in-out;
+    }
+    .sub-menu li{
+      margin:30px;
+      margin-left:60px;
+    
+           
+    }
+
+    .sub-menu a{
+        color:white;
+        text-decoration: none;
+        position:relative;
+        top:20px;
+        
     }
 
     .footer{
@@ -975,8 +1038,12 @@
     }
     .footer .footer-box .card-one .logo-area-footer{
         position:relative;
-        left:50px;
+        left:10px;
 
+    }
+    .footer .copyright{
+        position:relative;
+        top:-200px;
     }
 }
 
