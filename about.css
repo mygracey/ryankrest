@@ -1998,18 +1998,23 @@
     max-width:375px;
    }
 
-   .vission .card-one{
+   .vision .card-one{
     width:350px;
     height:350px;
    }
-   .vission .card-one img{
+   .vision .card-one img{
     width:100%;
     height:100%;
    }
 
-   .vission .card-two{
+   .vision .card-two{
     width:350px;
     height:350px;
+   }
+   .vision .card-two p{
+    width:300px;
+    position:relative;
+    left:180px;
    }
 
 
@@ -2019,8 +2024,12 @@
    .mission .card-one{
      width:350px;
      height:350px;
+     position:relative;
+     left:15px;
+     top:-40px;
      
    }
+
    .mission .card-one h2{
     position:relative;
     left:-5px;
@@ -2028,6 +2037,7 @@
 
 
    .mission .card-one p{
+    width:300px;
     position:relative;
     left:-15px;
    }
