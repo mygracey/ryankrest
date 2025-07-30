@@ -1,0 +1,1187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+}
+:root{
+    --primary-color:rgb(1, 1, 30);
+    --logo-text:#cecede;
+}
+
+
+.container{
+    
+    padding-right:10%;
+    padding-left:10%;
+}
+
+.dark-nav{
+    background-color:var(--primary-color);
+    /* background-color: rgb(132, 80, 3); */
+    transition: 0.3s ease-in-out;
+    
+}
+.navbar-mobile{
+    display: none;
+}
+
+.fa-bars{
+    display: none;
+}
+.sub-menu{
+    display:none;
+}
+.fa-close{
+    display:none;
+}
+
+.container-wrapper{
+    width:100%;
+    height:fit-content;
+}
+
+.home-page{
+    max-width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(33, 57, 9, 0.7),rgba(0,90,4,0.7)), url(images/happygirls.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    width:100%;
+    height:80px;
+    /* background:var(--primary-color); */
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 900;
+    transition: 0.3s;
+
+}
+
+.logo-area{
+    width:30%;
+    height:100%;
+    /* background:white; */
+    display:flex;
+    align-items:center;
+    gap:7px;
+}
+.logo-area .fa-graduation-cap{
+    color:orange;
+}
+.logo-area h1{
+    font-size:35px;
+    font-weight: normal;
+    color:var(--logo-text);
+
+}
+
+.navbar-links{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:-50px;
+    list-style:none;
+}
+
+.navbar-links a{
+    text-decoration:none;
+    margin:30px;
+    color:#fff;
+    text-transform: uppercase;
+    position:relative;
+}
+
+.navbar-links a::before{
+    position:absolute;
+    content:"";
+    width:0%;
+    border-bottom: 2px solid white;
+    top:20px;
+    transition: 0.1s ease-in-out;
+}
+
+.navbar-links a:hover::before{
+    width:100%;
+}
+
+.btn{
+    display: inline-block;
+    padding:14px 30px;
+    background:#fff;
+    border-radius:30px;
+    text-decoration: none;
+    /* color:var(--primary-color); */
+}
+.contact-link{
+    position:relative;
+    top:-13px;
+    color:var(--primary-color);
+    border:none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.details-btn{
+    color:var(--primary-color);
+    position:relative;
+    top:30px;
+    transition: 0.3s ease-in-out;
+    position:relative;
+    
+}
+.chatbot-box{
+    width:100px;
+    height:100px;
+    background:orange;
+    border-radius: 70%;
+    position:relative;
+    top:50px;
+    left:400px;
+    animation:pump 0.5s infinite alternate-reverse;
+}
+.chatbot-box p{
+    font-size:100px;
+    color:white;
+    position:relative;
+    top:-20px;
+    cursor: pointer;
+}
+.details-btn::after{
+    position:absolute;
+    content:"";
+    background:rgba(245, 170, 31, 0.5);
+    /* color:white; */
+    width:0%;
+    height:100%;
+    border-radius: 30px;
+    left:-0px;
+    top:-0px;
+    transition:0.3s ease-in-out;
+}
+
+.details-btn:hover::after{
+    width:100%;
+}
+
+
+.details-btn:hover span{
+    margin-left:10px;
+    
+}
+
+.text-area{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+    top:40%;
+    
+}
+
+.text-area .ryankrest-introduction{
+    font-size:20px;
+    color:orange;
+}
+
+.text-area .ryankrest-main-text{
+    font-size:60px;
+    color:#fff;
+    font-weight: normal;
+    width:1000px;
+    text-align:center;
+}
+
+.text-area .ryankrest-details{
+    color:#fff;
+    line-height: 1.4;
+    font-size:18px;
+}
+
+
+
+.footer{
+    width:100%;
+    height:100vh;
+    background:var(--primary-color);
+    
+}
+.footer-box{
+    width:100%;
+    height:70%;
+    display:flex;
+    align-items: center;
+    /* background:red; */
+    position:relative;
+    top:-50px;
+
+}
+.footer .card-one{
+    width:300px;
+    height:60%;
+    margin:10px;
+    /* background:#fff; */
+    position:relative;
+    
+}
+.footer .card-two{
+    width:300px;
+    height:60%;
+    margin:10px;
+    /* background:#fff; */
+    
+}
+.footer .card-three{
+    width:300px;
+    height:60%;
+    margin:10px;
+    /* background:#fff; */
+    
+}
+
+.logo-area-footer{
+    display:flex;
+    gap:7px;
+    /* background:black; */
+    position:relative;
+    top:100px;
+}
+
+.logo-area-footer .fa-graduation-cap{
+    color:orange;
+}
+.logo-area-footer h1{
+    font-size:35px;
+    font-weight: normal;
+    color:var(--logo-text);
+
+}
+
+.footer-links{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    position:relative;
+    top:70px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:orange;
+    
+}
+
+.footer-links li{
+    margin:20px;
+}
+
+.footer .socials{
+    display:flex;
+    justify-content:center;
+    align-items: end;
+    
+}
+
+.footer .icon{
+    margin:10px;
+    color:#fff;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .icon:hover{
+    transform: translateY(-10px);
+    color:orange;
+}
+.footer .copyright{
+    color:rgb(132, 80, 3);
+    position:relative;
+    top:100px;
+    text-align:center;
+}
+
+
+
+
+
+
+/*Tablet Responsiveness*/
+
+
+
+
+
+
+
+/*Mobile Responsiveness*/
+
+@media(max-width:540px){
+    .container-wrapper{
+        max-width:540px;
+        height:fit-content;
+        overflow-x:hidden;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-mobile{
+        display: block;
+        width:540px;
+        height:70px;
+        background:var(--primary-color);
+        /* position:relative; */
+        position: fixed;
+        top:0;
+        z-index: 900;
+    }
+
+    .navbar-mobile .fa-bars{
+        display:block;
+        color:white;
+        position:relative;
+        left:400px;
+        top:-50px;
+        cursor:pointer;
+    }
+    .navbar-mobile .close{
+        color:white;
+        position:relative;
+        top:-50px;
+        left:400px;
+        cursor: pointer;
+        display: none;
+    }
+   
+    .sub-menu{
+        position:fixed;
+        left:340px;
+        top:70px;
+        width:200px;
+        height:300px;
+        list-style: none;
+        background:rgba(132, 80, 3,0.8); 
+        z-index:900;  
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display:none;
+        animation:slideinfromright 1s ease-in-out;
+    }
+    .sub-menu li{
+      margin:30px;
+      margin-left:60px;
+    
+           
+    }
+
+    .sub-menu a{
+        color:white;
+        text-decoration: none;
+        position:relative;
+        top:20px;
+        
+    }
+    .home-page{
+        max-width:540px;
+    }
+    .home-page .text-area{
+        width:400px;
+        position:relative;
+        top:240px;
+    }
+    .home-page .text-area .ryankrest-introduction{
+        position:relative;
+        left:10px;
+        font-size:22px;
+    }
+
+    .home-page .text-area .ryankrest-main-text{
+        font-size:30px;
+        font-weight: normal;
+        position:relative;
+        left:15px;
+    }
+
+    .home-page .text-area .ryankrest-details{
+        width:350px;
+        font-size:18px;
+        position:relative;
+        left:5px;
+        top:5px;
+
+    }
+    .home-page .text-area .details-btn{
+        position:relative;
+        left:-10px;
+    }
+    .home-page .text-area .chatbot-box{
+        position:relative;
+        left:50px;
+        top:80px;
+    }
+
+    .footer{
+        width:540px;
+        height:fit-content;
+        overflow-y: auto;
+        
+    }
+    .footer-box{
+        width:100%;
+        height: 900px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+   .footer-box .card-one{
+        width:400px;
+        height:200px;
+        left:-20px;
+        /* background-color: black; */
+    }
+    .logo-area-footer{
+        position:relative;
+        top:40px;
+        left:40px;
+    }
+
+    .footer-box .card-two{
+        width:400px;
+        height:400px;
+        /* background:black; */
+    }
+
+    .footer-box .footer-links{
+        position:relative;
+        top:5px;
+    }
+    .footer-box .card-three{
+        width:400px;
+        height:200px;
+        /* background:black; */
+        position:relative;
+        top:-130px;
+        
+    }
+    
+    .footer .icon{
+        position:relative;
+        top:-100px;
+    }
+
+    .footer .copyright{
+        font-size:14px;
+        position:relative;
+        left:5px;
+        top:-40px;
+    }
+
+}
+
+
+/* Mobile Responsiveness 500px width*/
+
+
+@media(max-width:500px){
+    .container-wrapper{
+        max-width:500px;
+        height:fit-content;
+        overflow-x:hidden;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-mobile{
+        display: block;
+        width:500px;
+        height:70px;
+        background:var(--primary-color);
+        /* position:relative; */
+        position: fixed;
+        top:0;
+        z-index: 900;
+    }
+
+    .navbar-mobile .fa-bars{
+        display:block;
+        color:white;
+        position:relative;
+        left:400px;
+        top:-50px;
+        cursor:pointer;
+    }
+    .navbar-mobile .close{
+        color:white;
+        position:relative;
+        top:-50px;
+        left:400px;
+        cursor: pointer;
+        display: none;
+    }
+   
+    .sub-menu{
+        position:fixed;
+        left:310px;
+        top:70px;
+        width:200px;
+        height:300px;
+        list-style: none;
+        background:rgba(132, 80, 3,0.8); 
+        z-index:900;  
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display:none;
+        animation:slideinfromright 1s ease-in-out;
+    }
+    .sub-menu li{
+      margin:30px;
+      margin-left:60px;
+    
+           
+    }
+
+    .sub-menu a{
+        color:white;
+        text-decoration: none;
+        position:relative;
+        top:20px;
+        
+    }
+    .home-page{
+        max-width:500px;
+    }
+    .home-page .text-area{
+        width:400px;
+        position:relative;
+        top:240px;
+    }
+    .home-page .text-area .ryankrest-introduction{
+        position:relative;
+        left:-10px;
+        font-size:22px;
+    }
+
+    .home-page .text-area .ryankrest-main-text{
+        font-size:28px;
+        font-weight: normal;
+        position:relative;
+        left:-10px;
+    }
+
+    .home-page .text-area .ryankrest-details{
+        width:350px;
+        font-size:18px;
+        position:relative;
+        left:5px;
+        top:5px;
+
+    }
+    .home-page .text-area .details-btn{
+        position:relative;
+        left:-10px;
+    }
+    .home-page .text-area .chatbot-box{
+        position:relative;
+        left:50px;
+        top:80px;
+    }
+
+    .footer{
+        width:500px;
+        height:fit-content;
+        overflow-y: auto;
+        
+    }
+    .footer-box{
+        width:100%;
+        height: 900px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+   .footer-box .card-one{
+        width:400px;
+        height:200px;
+        left:-20px;
+        /* background-color: black; */
+    }
+    .logo-area-footer{
+        position:relative;
+        top:40px;
+        left:40px;
+    }
+
+    .footer-box .card-two{
+        width:400px;
+        height:400px;
+        /* background:black; */
+    }
+
+    .footer-box .footer-links{
+        position:relative;
+        top:5px;
+    }
+    .footer-box .card-three{
+        width:400px;
+        height:200px;
+        /* background:black; */
+        position:relative;
+        top:-130px;
+        
+    }
+    
+    .footer .icon{
+        position:relative;
+        top:-100px;
+    }
+
+    .footer .copyright{
+        font-size:14px;
+        position:relative;
+        left:-10px;
+        top:-40px;
+    }
+
+}
+
+
+
+@media(max-width:430px){
+    .container-wrapper{
+        max-width:430px;
+        height:fit-content;
+        overflow-x:hidden;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-mobile{
+        display: block;
+        width:430px;
+        height:70px;
+        background:var(--primary-color);
+        position:relative;
+        position: fixed;
+        top:0;
+        z-index: 900;
+    }
+
+    .navbar-mobile .fa-bars{
+        display:block;
+        color:white;
+        position:relative;
+        left:300px;
+        top:-50px;
+        cursor:pointer;
+    }
+    .navbar-mobile .close{
+        color:white;
+        position:relative;
+        top:-50px;
+        left:300px;
+        cursor: pointer;
+        display: none;
+    }
+   
+    .sub-menu{
+        position:fixed;
+        left:260px;
+        top:70px;
+        width:200px;
+        height:300px;
+        list-style: none;
+        background:rgba(132, 80, 3,0.8); 
+        z-index:900;  
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display:none;
+        animation:slideinfromright 1s ease-in-out;
+    }
+    .sub-menu li{
+      margin:30px;
+      margin-left:60px;
+    
+           
+    }
+
+    .sub-menu a{
+        color:white;
+        text-decoration: none;
+        position:relative;
+        top:20px;
+        
+    }
+
+    
+    .home-page{
+        max-width:430px;
+    }
+    .home-page .text-area{
+        width:400px;
+    }
+    .home-page .text-area .ryankrest-introduction{
+        position:relative;
+        left:-27px;
+    }
+
+    .home-page .text-area .ryankrest-main-text{
+        font-size:25px;
+        position:relative;
+        left:-27px;
+    }
+
+    .home-page .text-area .ryankrest-details{
+        width:350px;
+        font-size:14px;
+        position:relative;
+        left:-25px;
+        top:5px;
+        text-align: center;
+
+    }
+    .home-page .text-area .details-btn{
+        position:relative;
+        left:-29px;
+    }
+    .home-page .text-area .chatbot-box{
+        position:relative;
+        left:50px;
+        top:100px;
+    }
+
+    .footer{
+        width:430px;
+        height:1200px;
+        overflow-y: auto;
+        
+    }
+    .footer-box{
+        width:100%;
+        height: 900px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+   .footer-box .card-one{
+        width:400px;
+        height:200px;
+        left:-20px;
+        /* background-color: black; */
+    }
+    .footer-box .card-one .logo-area-footer{
+        position:relative;
+        top:60px;
+        left:45px;
+    }
+
+    .footer-box .card-two{
+        width:400px;
+        height:400px;
+        /* background:black; */
+    }
+
+    .footer-box .footer-links{
+        position:relative;
+        top:5px;
+    }
+    .footer-box .card-three{
+        width:400px;
+        height:200px;
+        /* background:black; */
+        position:relative;
+        top:-130px;
+        
+    }
+    
+    .footer .icon{
+        position:relative;
+        top:-100px;
+    }
+
+    .footer .copyright{
+        font-size:14px;
+        position:relative;
+        left:5px;
+        top:-200px;
+    }
+
+}
+
+
+
+
+
+
+@media(max-width:414px){
+    .container-wrapper{
+        max-width:414px;
+        height:fit-content;
+        overflow-x:hidden;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-mobile{
+        display: block;
+        width:414px;
+        height:70px;
+        background:var(--primary-color);
+        position:relative;
+        position: fixed;
+        top:0;
+        z-index: 900;
+    }
+
+    .fa-bars{
+        display:block;
+        color:white;
+        position:relative;
+        left:300px;
+        top:-50px;
+        cursor:pointer;
+    }
+    .close{
+        color:white;
+        position:relative;
+        top:-50px;
+        left:300px;
+        cursor: pointer;
+        display: none;
+    }
+   
+    .sub-menu{
+        position:fixed;
+        left:290px;
+        top:70px;
+        width:200px;
+        height:300px;
+        list-style: none;
+        background:rgba(132, 80, 3,0.8); 
+        z-index:900;  
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display:none;
+        animation:slideinfromright 1s ease-in-out;
+    }
+    .sub-menu li{
+      margin:30px;
+      margin-left:60px;
+    
+           
+    }
+
+    .sub-menu a{
+        color:white;
+        text-decoration: none;
+        position:relative;
+        top:20px;
+        
+    }
+    .home-page{
+        max-width:414px;
+    }
+    .home-page .text-area{
+        width:414px;
+    }
+    .home-page .text-area .ryankrest-introduction{
+        margin-left:-30px;
+    }
+
+    .home-page .text-area .ryankrest-main-text{
+        font-size:23px;
+        font-weight: normal;
+        position:relative;
+        left:-40px;
+    }
+
+    .home-page .text-area .ryankrest-details{
+        width:350px;
+        font-size:16px;
+        position:relative;
+        left:-30px;
+        top:5px;
+
+    }
+    .home-page .text-area .details-btn{
+        position:relative;
+        left:-29px;
+    }
+    .home-page .text-area .chatbot-box{
+        position:relative;
+        left:50px;
+        top:80px;
+    }
+
+    .footer{
+        width:414px;
+        height:1200px;
+        overflow-y: auto;
+        
+    }
+    .footer-box{
+        width:100%;
+        height: 900px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+   .footer-box .card-one{
+        width:400px;
+        height:200px;
+        left:-20px;
+        /* background-color: black; */
+    }
+    .footer-box .card-one .logo-area-footer{
+        /* position:relative;
+        top:40px;
+        left:200px; */
+        margin-left:75px;
+    }
+
+    .footer-box .card-two{
+        width:400px;
+        height:400px;
+        /* background:black; */
+    }
+
+    .footer-box .footer-links{
+        position:relative;
+        top:5px;
+    }
+    .footer-box .card-three{
+        width:400px;
+        height:200px;
+        /* background:black; */
+        position:relative;
+        top:-130px;
+        
+    }
+    
+    
+    .footer .icon{
+        position:relative;
+        top:-100px;
+    }
+
+    .footer .copyright{
+        font-size:14px;
+        position:relative;
+        left:5px;
+        top:-200px;
+    }
+
+}
+
+
+
+
+@media(max-width:375px){
+    .container-wrapper{
+        max-width:375px;
+        height:fit-content;
+        overflow-x:hidden;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-mobile{
+        display: block;
+        width:375px;
+        height:70px;
+        background:var(--primary-color);
+        position:relative;
+        position: fixed;
+        top:0;
+        z-index: 900;
+    }
+
+    .navbar-mobile .fa-bars{
+        display:block;
+        color:white;
+        position:relative;
+        left:275px;
+        top:-50px;
+        cursor:pointer;
+    }
+   .navbar-mobile .close{
+        color:white;
+        position:relative;
+        top:-50px;
+        left:275px;
+        cursor: pointer;
+        display: none;
+    }
+   
+    .sub-menu{
+        position:fixed;
+        left:170px;
+        top:70px;
+        width:200px;
+        height:300px;
+        list-style: none;
+        background:rgba(132, 80, 3,0.8); 
+        z-index:900;  
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display:none;
+        animation:slideinfromright 1s ease-in-out;
+    }
+    .sub-menu li{
+      margin:30px;
+      margin-left:60px;
+    
+           
+    }
+
+    .sub-menu a{
+        color:white;
+        text-decoration: none;
+        position:relative;
+        top:20px;
+        
+    }
+
+    .banner{
+        max-width:375px;
+    }
+
+        
+  .home-page{
+        max-width:375px;
+        
+   }
+   .home-page .text-area{
+    width:375px;
+   }
+   .home-page .text-area .ryankrest-introduction{
+    font-size:17px;
+   }
+   .home-page .text-area .ryankrest-main-text{
+    font-size:20px;
+    position:relative;
+    left:-40px;
+    /* font-weight: bold; */
+   }
+   .home-page .text-area .ryankrest-details{
+    font-size: 16px;
+    position:relative;
+    left:-20px;
+   }
+   
+   
+   .footer{
+    max-width:375px;
+    height:auto;
+   }
+   
+    .footer-box{
+        width:100%;
+        height: 900px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+   .footer-box .card-one{
+        width:200px;
+        height:200px;
+        left:-20px;
+        /* background-color: black; */
+    }
+   .footer-box .card-one .logo-area-footer{
+        position:relative;
+        top:40px;
+        left:-20px;
+    }
+
+    .footer-box .card-two{
+        width:300px;
+        height:300px;
+        /* background:orange; */
+        position:relative;
+        left:100px;
+    }
+
+    .footer-box .card-two .footer-links{
+        position:relative;
+        top:-50px;
+        left:-80px;
+    }
+    
+    
+    
+    .footer .icon{
+        position:relative;
+        top:-100px;
+        left:-50px;
+    }
+
+    .footer .copyright{
+        font-size:14px;
+        position:relative;
+        left:5px;
+        top:-250px;
+    }
+
+}
+
+
+
+
+@keyframes slideinfromright{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes pump {
+    from{
+        transform: scale(0.98);
+    }
+    to{
+        transform: scale(1.1);
+        background:greenyellow;
+    }
+}
+
+
+
+
+
+
+
+
