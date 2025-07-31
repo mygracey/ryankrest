@@ -36,7 +36,7 @@ button.addEventListener("click",function(e){
             submitMessage.innerText="Form submission successful!"
 
             setTimeout(()=>{
-                window.location.reload(true)
+                window.location.href="index.html"
             },4000)
         },3000)
 
